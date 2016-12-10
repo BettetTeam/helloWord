@@ -1,0 +1,1015 @@
+@import "variables";
+@import "mix";
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, hr {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: @font-color-base;
+    text-decoration: none;
+}
+
+a:hover {
+    //color: @font-color-blue;
+}
+
+img {
+    border: none;
+    outline: none;
+    vertical-align: middle;
+}
+
+// HTML5 display definitions
+// ==========================================================================
+
+//
+// HTML5 display definitions
+// ==========================================================================
+
+//
+// Correct `block` display not defined for any HTML5 element in IE 8/9.
+// Correct `block` display not defined for `details` or `summary` in IE 10/11
+// and Firefox.
+// Correct `block` display not defined for `main` in IE 11.
+//
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+    //hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+// Correct `block` display not defined for `details` or `summary` in IE 10/11
+// and Firefox.
+// Correct `block` display not defined for `main` in IE 11.
+//
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+    //hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+//
+// 1. Correct `inline-block` display not defined in IE 8/9.
+// 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+//
+audio,
+canvas,
+progress,
+video {
+    display: inline-block; // 1
+    vertical-align: baseline; // 2
+}
+
+// Links
+// ==========================================================================
+
+//
+// Remove the gray background color from active links in IE 10.
+//
+
+a {
+    background-color: transparent;
+}
+
+//
+// Improve readability of focused elements when they are also in an
+// active/hover state.
+//
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+// 1. Correct color not being inherited.
+//    Known issue: affects color of disabled elements.
+// 2. Correct font properties not being inherited.
+// 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+//
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit; // 1
+    font: inherit; // 2
+    margin: 0; // 3
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+button {
+    overflow: visible;
+}
+
+//
+// Address inconsistent `text-transform` inheritance for `button` and `select`.
+// All other form control elements do not inherit `text-transform` values.
+// Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+// Correct `select` style inheritance in Firefox.
+//
+
+button,
+select {
+    text-transform: none;
+}
+
+// 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+//    and `video` controls.
+// 2. Correct inability to style clickable `input` types in iOS.
+// 3. Improve usability and consistency of cursor style between image-type
+//    `input` and others.
+//
+button,
+html input[type="button"], // 1
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; // 2
+    cursor: pointer; // 3
+    background-color: transparent;
+}
+
+//
+// Re-set default cursor for disabled elements.
+//
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+//
+// Remove inner padding and border in Firefox 4+.
+//
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+//
+// Address Firefox 4+ setting `line-height` on `input` using `!important` in
+// the UA stylesheet.
+//
+
+input {
+    line-height: normal;
+}
+
+// It's recommended that you don't attempt to style these elements.
+// Firefox's implementation doesn't respect box-sizing, padding, or width.
+//
+// 1. Address box sizing set to `content-box` in IE 8/9/10.
+// 2. Remove excess padding in IE 8/9/10.
+//
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; // 1
+    padding: 0; // 2
+}
+
+//
+// 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+// 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+//
+
+input[type="search"] {
+    -webkit-appearance: textfield; // 1
+    box-sizing: content-box; //2
+}
+
+//
+// Remove inner padding and search cancel button in Safari and Chrome on OS X.
+// Safari (but not Chrome) clips the cancel button when the search input has
+// padding (and `textfield` appearance).
+//
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+// 1. Correct `color` not being inherited in IE 8/9/10/11.
+// 2. Remove padding so people aren't caught out if they zero out fieldsets.
+//
+
+legend {
+    border: 0; // 1
+    padding: 0; // 2
+}
+
+// Tables
+// ==========================================================================
+
+//
+// Remove most spacing between table cells.
+//
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+.clear-fix:before,
+.clear-fix:after,
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.clear-fix:after, .container:after, .container-fluid:after {
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.transition {
+    .transition();
+}
+
+.btn {
+    cursor: pointer;
+    .transition();
+}
+
+.text-lf {
+    text-align: left;
+}
+
+.text-rt {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.red {
+    color: @redbase;
+}
+
+.sec-wide {
+    width: 875px;
+}
+
+.aside-wide {
+    width: 300px;
+}
+
+.box-shadow {
+    .box-shadow(0, 0, 3px, rgb(225, 225, 225));
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-size: @font-size-base;
+    font-family: @font-family-base;
+    color: @font-color-base;
+    min-width: 1200px;
+    background-color: #f6f6f6;
+    padding-top: 90px;
+}
+
+.page-header, .page-section, .page-footer, .page-banner {
+    width: 100%;
+    min-width: 1200px;
+}
+
+/***********************************************header**/
+.page-header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 90px;
+    background-color: #ffffff;
+    //.box-shadow(0, 0px, 5px, rgb(110,110,110));
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        left: 0;
+        border-bottom: -6px;
+        background: url("../images/shadow.png") no-repeat left top;
+    }
+    .brand {
+        width: 161px;
+        height: 90px;
+        line-height: 90px;
+    }
+    .navigation {
+        margin-right: -10px;
+        > li {
+            float: left;
+            margin-left: 10px;
+            a {
+                display: block;
+                height: 90px;
+                line-height: 90px;
+                padding: 0 10px;
+                font-size: 16px;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: 0 auto;
+                    height: 4px;
+                    background-color: @orangebase;
+                    .transition();
+                    .border-radius(2px);
+                }
+            }
+            &:hover {
+                a {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        > li.on {
+            a {
+                color: @orangebase;
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/***********************************************banner**/
+.page-banner {
+    min-height: 306px;
+    position: relative;
+    .aboutUsTabs {
+        position: absolute;
+        height: 43px;
+        left: 0;
+        right: 0;
+        bottom: 100px;
+        > li {
+            display: inline-block;
+            width: 142px;
+            margin: 0 5px;
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 43px;
+                line-height: 43px;
+                color: #484848;
+                background-color: #e3e5e6;
+                .transition();
+            }
+            &:hover {
+                a {
+                    color: #ffffff;
+                    background-color: @orangebase;
+                }
+            }
+        }
+        li.on {
+            a {
+                color: #ffffff;
+                background-color: @orangebase;
+            }
+        }
+    }
+}
+
+//侧栏公共Style
+.aside-header {
+    height: 56px;
+    padding-top: 15px;
+    border-bottom: 1px solid transparent;
+    span {
+        display: inline-block;
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        color: #ffffff;
+        background-color: @redbase;
+        padding: 0 26px;
+    }
+}
+.aside-item{
+    background-color: #ffffff;
+    margin-top: 20px;
+    .aside-title {
+        height: 53px;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 0 15px;
+        span {
+            display: inline-block;
+            height: 52px;
+            line-height: 52px;
+            padding: 0 0 0 32px;
+            font-size: 18px;
+            color: #000000;
+        }
+    }
+}
+
+//股票指数
+.stock-figure-aside{
+    position: relative;
+    height: 405px;
+    background-color: #ffffff;
+    .box-shadow(0, 0, 5px, rgb(225, 225, 225));
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: #ffffff;
+    }
+    > li {
+        height: 81px;
+        padding: 0 10px;
+        .transition();
+        &:hover {
+            background-color: #fff7f2;
+        }
+        .content {
+            height: 100%;
+            border-bottom: 1px solid #e5e5e5;
+            line-height: 24px;
+            position: relative;
+            .con-lf {
+                width: 125px;
+                height: 100%;
+                padding: 19px 20px 0 10px;
+                h3 {
+                    font-weight: normal;
+                    font-size: 16px;
+                }
+                span {
+                    font-size: 12px;
+                    color: @redbase;
+                }
+            }
+            .con-md {
+                position: relative;
+                width: 35px;
+                height: 100%;
+                .icon {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background: url("../images/arrowRed.png") no-repeat center;
+                }
+            }
+            .con-rt {
+                width: 120px;
+                height: 100%;
+                padding: 29px 33px 0 0;
+
+                b {
+                    font-size: 18px;
+                    font-weight: normal;
+                    color: @redbase;
+                }
+                .arrow-rt.icon {
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -10px;
+                    width: 33px;
+                    height: 20px;
+                    background: url("../images/arrowRt.png") no-repeat center;
+                }
+            }
+        }
+    }
+    > li.reduce {
+        .content {
+            .con-lf {
+                span {
+                    color: @green;
+                }
+            }
+            .con-md {
+                .icon {
+                    background: url("../images/arrowGreen.png") no-repeat center;
+                }
+            }
+            .con-rt {
+                b {
+                    color: @green;
+                }
+            }
+        }
+    }
+}
+//推荐
+.recommendList-aside {
+    padding: 19px 0 1px;
+    > li {
+        height: 82px;
+        margin-bottom: 18px;
+        padding: 0 18px;
+        .image {
+            width: 100px;
+            height: 82px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                .transition();
+            }
+        }
+        .description {
+            width: 164px;
+            padding-left: 10px;
+            a {
+                color: #626262;
+                line-height: 24px;
+                .transition();
+            }
+        }
+        &:hover{
+            .image{
+                img{
+                    -webkit-transform: scale(1.2);
+                    -moz-transform: scale(1.2);
+                    -o-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+            }
+            .description{
+                a{
+                    color: @orangebase;
+                }
+            }
+        }
+    }
+}
+//快讯
+.news-flash-aside {
+    .aside-title {
+        span {
+            background: url("../images/newsFlash.png") no-repeat left center;
+        }
+    }
+    .aside-content {
+        padding: 17px 15px 10px 20px;
+        height: 547px;
+        overflow: hidden;
+        position: relative;
+        .news-flash-list{
+            padding-right: 25px;
+            > li {
+                padding-bottom: 12px;
+                margin-bottom: 12px;
+                line-height: 24px;
+                border-bottom: 1px dotted #bababa;
+                span {
+                    color: @green;
+                }
+                p {
+                    a {
+                        color: #8d8d8d;
+                        .transition();
+                    }
+                }
+                &:hover {
+                    p {
+                        a {
+                            color: @orangebase;
+                        }
+                    }
+                }
+            }
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            height: 1px;
+            bottom: 10px;
+            background-color: #ffffff;
+        }
+    }
+}
+//点击排行
+.click-rank-aside{
+    .aside-title{
+        span{
+            background:url("../images/clickRank.png") no-repeat left center;
+        }
+        .buttons{
+            padding-top: 13.5px;
+            .btn{
+                float: left;
+                width: 55px;
+                height: 25px;
+                text-align: center;
+                line-height: 25px;
+                font-size: 12px;
+                background-color: #e4e4e4;
+                &:hover{
+                    background-color: @green;
+                    color: #ffffff;
+                }
+            }
+            .btn.on{
+                background-color: @green;
+                color: #ffffff;
+            }
+        }
+    }
+    .aside-content{
+        font-size: 12px;
+        padding: 28px 15px 1px 20px;
+        .rankList{
+            border-left: 1px solid #e3e3e3;
+            display: none;
+            >li{
+                padding-left: 20px;
+                line-height: 24px;
+                margin-bottom: 25px;
+                position: relative;
+                &:before{
+                    content:"";
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    .border-radius(3.5px);
+                    background-color: #e3e3e3;
+                    left: -3.5px;
+                    top:9px;
+                    .transition();
+                }
+                p{
+                    .text-overflow();
+                    a{
+                        .transition();
+                    }
+                }
+                span{
+                    color: @pink;
+                }
+                &:hover{
+                    &:before{
+                        background-color: @orangebase;
+                    }
+                    p{
+                        a{
+                            color: @orangebase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//热门名人
+.hot-masters-aside{
+    .aside-title{
+        span{
+            background: url("../images/hot_master.png") no-repeat left center;
+            color: @orangebase;
+        }
+        a.more{
+            font-weight: normal;
+            line-height: 52px;
+            &:hover{
+                color: @orangebase;
+            }
+        }
+    }
+    .aside-content{
+        padding: 28px 15px 1px 19px;
+        .mastersList{
+            >li{
+                margin-bottom: 28px;
+                .image{
+                    width: 70px;
+                    height: 70px;
+                    .border-radius(35px);
+                    overflow: hidden;
+                    img{
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                .description{
+                    width: 196px;
+                    padding-left: 10px;
+                    height: 70px;
+                    overflow: hidden;
+                    h3{
+                        font-weight: normal;
+                        span{
+                            font-size: 16px;
+                            color: #000000;
+                            .transition();
+                        }
+                        small{
+                            font-size: 12px;
+                            margin-left: 10px;
+                            i{
+                                font-style: normal;
+                                color: #22893f;
+                            }
+                        }
+                    }
+                    p{
+                        margin-top: 5px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #7a7a7a;
+                    }
+                }
+                &:hover{
+                    .description{
+                        h3{
+                            span{
+                                color: @orangebase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*************************************************.page-section**/
+.page-section {
+    //sec-header commonStyle
+    .sec-header {
+        height: 56px;
+        border-bottom: 1px solid #d7d7d7;
+        span {
+            font-size: 18px;
+            color: #000000;
+            display: inline-block;
+            height: 56px;
+            line-height: 52px;
+            padding: 0 5px;
+            margin-right: 15px;
+            border-bottom: 3px solid @orangebase;
+        }
+    }
+    //资讯列表
+    .newsList {
+        margin-top: 20px;
+        > li {
+            background-color: #ffffff;
+            min-height: 245px;
+            padding: 21px 19px;
+            margin-bottom: 15px;
+            .box-shadow(0, 0, 3px, rgb(230, 230, 230));
+            .content {
+                .image {
+                    width: 247px;
+                    height: 201px;
+                    img {
+                        width: 247px;
+                        height: 201px;
+                        .transition();
+                    }
+                }
+                .description {
+                    width: 590px;
+                    padding-left: 20px;
+                    color: @blackdark;
+                    h3 {
+                        font-size: 20px;
+                        a {
+                            color: @blackdark;
+                            .transition();
+                        }
+                    }
+                    .meta {
+                        margin-top: 6px;
+                        font-size: 12px;
+                        line-height: 24px;
+                        span {
+                            color: @orangebase;
+                        }
+                        i {
+                            font-style: normal;
+                            margin-left: 30px;
+                            color: #979797;
+                        }
+                    }
+                    p {
+                        margin-top: 15px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            &:hover {
+                .content {
+                    .image {
+                        img {
+                            opacity: .8;
+                            -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+                            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+                        }
+                    }
+                    .description {
+                        h3 {
+                            a {
+                                color: @orangebase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .loadMore {
+        .more-btn {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            background-color: #e7e7e7;
+            &:hover {
+                background-color: darken(#e7e7e7, 5%);
+            }
+        }
+    }
+    //关于我们页面commonStyle
+    .about-item {
+        background-color: #ffffff;
+        .border-radius(5px);
+        padding: 50px 40px;
+        position: relative;
+        top: -50px;
+    }
+}
+
+/***********************************************footer**/
+.page-footer {
+    background-color: #212121;
+    margin-top: 40px;
+    padding: 80px 0 0 0;
+    .footList {
+        margin-right: 110px;
+        h3 {
+            font-weight: normal;
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        ul {
+            > li {
+                a {
+                    color: #989898;
+                    line-height: 30px;
+                    .transition(all, .1s, 0s, ease);
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .scan-concern {
+        color: #ffffff;
+        margin-top: -20px;
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .wei-xin {
+            width: 139px;
+            img {
+                width: 139px;
+                height: 139px;
+                margin-bottom: 5px;
+            }
+            span {
+                line-height: 30px;
+            }
+        }
+    }
+    .website-copyright {
+        margin-top: 55px;
+        background-color: #000;
+        height: 50px;
+        line-height: 50px;
+        color: #888888;
+        a {
+            color: #888888;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/********************************************fixed-control**/
+#scrollTop{
+    position: fixed;
+    z-index: 100;
+    width: 44px;
+    height: 44px;
+    right:50px;
+    bottom:50px;
+    background-color: #676767;
+    display: none;
+    .transition();
+    .btn{
+        display: block;
+        height: 100%;
+        background: url('../images/arrowUp.png') no-repeat center;
+    }
+    &:hover{
+        background-color: @orangebase;
+    }
+}
+/********************************************paginations**/
+.pagination{
+    a{
+        display: inline-block;
+        margin: 0 2px;
+        .transition();
+    }
+    .prev,.next{
+        width: 140px;
+        height: 42px;
+        line-height: 42px;
+        background-color: #f0f1f1;
+        &:hover{
+            background-color: @orangebase;
+            color: #ffffff;
+        }
+    }
+}

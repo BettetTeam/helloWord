@@ -1,0 +1,65 @@
+/*********************************page-banner*/
+.page-banner {
+  margin-top: 42px;
+}
+.page-banner .sec-banner {
+  height: 406px;
+}
+.page-banner .sec-banner .image {
+  position: relative;
+}
+.page-banner .sec-banner .image img {
+  width: 100%;
+  height: 100%;
+}
+.page-banner .sec-banner .image:hover .title {
+  background-color: #f56f26;
+}
+.page-banner .sec-banner .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0 19px;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+.page-banner .sec-banner .big.image {
+  width: 480px;
+  height: 100%;
+}
+.page-banner .sec-banner .big.image .title {
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+}
+.page-banner .sec-banner .small.image {
+  width: 386px;
+  height: 197px;
+  margin-bottom: 12px;
+}
+.page-banner .sec-banner .small.image .title {
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+}
+/*********************************page-section*/
+.page-section {
+  margin-top: 12px;
+}
+.page-section .sec-section .sec-header .btn {
+  display: inline-block;
+  height: 26px;
+  width: 77px;
+  text-align: center;
+  line-height: 26px;
+  background-color: #2397da;
+  color: #ffffff;
+  margin-left: 3px;
+}
+.page-section .sec-section .sec-header .btn:hover {
+  background-color: #1c79ae;
+}

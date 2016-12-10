@@ -1,0 +1,503 @@
+@import "variables";
+@import "mix";
+
+/*********************************page-banner*/
+.page-banner {
+    margin-top: 42px;
+    .sec-banner {
+        height: 406px;
+        .image {
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:hover {
+                .title {
+                    background-color: @orangebase;
+                }
+            }
+        }
+        .title {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 0 19px;
+            .transition();
+        }
+        .big.image {
+            width: 480px;
+            height: 100%;
+            .title {
+                height: 50px;
+                font-size: 18px;
+                line-height: 50px;
+            }
+        }
+        .small.image {
+            width: 386px;
+            height: 197px;
+            margin-bottom: 12px;
+            .title {
+                height: 40px;
+                font-size: 16px;
+                line-height: 40px;
+            }
+        }
+    }
+    //.aside-banner {
+    //    position: relative;
+    //    height: 405px;
+    //    background-color: #ffffff;
+    //    .box-shadow(0, 0, 5px, rgb(225, 225, 225));
+    //    &:after {
+    //        content: "";
+    //        display: block;
+    //        position: absolute;
+    //        left: 0;
+    //        right: 0;
+    //        bottom: 0;
+    //        height: 1px;
+    //        background-color: #ffffff;
+    //    }
+    //    > li {
+    //        height: 81px;
+    //        padding: 0 10px;
+    //        .transition();
+    //        &:hover {
+    //            background-color: #fff7f2;
+    //        }
+    //        .content {
+    //            height: 100%;
+    //            border-bottom: 1px solid #e5e5e5;
+    //            line-height: 24px;
+    //            position: relative;
+    //            .con-lf {
+    //                width: 125px;
+    //                height: 100%;
+    //                padding: 19px 20px 0 10px;
+    //                h3 {
+    //                    font-weight: normal;
+    //                    font-size: 16px;
+    //                }
+    //                span {
+    //                    font-size: 12px;
+    //                    color: @redbase;
+    //                }
+    //            }
+    //            .con-md {
+    //                position: relative;
+    //                width: 35px;
+    //                height: 100%;
+    //                .icon {
+    //                    display: block;
+    //                    position: absolute;
+    //                    left: 0;
+    //                    right: 0;
+    //                    top: 0;
+    //                    bottom: 0;
+    //                    background: url("../images/arrowRed.png") no-repeat center;
+    //                }
+    //            }
+    //            .con-rt {
+    //                width: 120px;
+    //                height: 100%;
+    //                padding: 29px 33px 0 0;
+    //
+    //                b {
+    //                    font-size: 18px;
+    //                    font-weight: normal;
+    //                    color: @redbase;
+    //                }
+    //                .arrow-rt.icon {
+    //                    position: absolute;
+    //                    display: block;
+    //                    right: 0;
+    //                    top: 50%;
+    //                    margin-top: -10px;
+    //                    width: 33px;
+    //                    height: 20px;
+    //                    background: url("../images/arrowRt.png") no-repeat center;
+    //                }
+    //            }
+    //        }
+    //    }
+    //    > li.reduce {
+    //        .content {
+    //            .con-lf {
+    //                span {
+    //                    color: @green;
+    //                }
+    //            }
+    //            .con-md {
+    //                .icon {
+    //                    background: url("../images/arrowGreen.png") no-repeat center;
+    //                }
+    //            }
+    //            .con-rt {
+    //                b {
+    //                    color: @green;
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
+}
+
+/*********************************page-section*/
+.page-section {
+    margin-top: 12px;
+    //左侧主体
+    .sec-section {
+        .sec-header {
+            //height: 56px;
+            //border-bottom: 1px solid #d7d7d7;
+            //span {
+            //    font-size: 18px;
+            //    color: #000000;
+            //    display: inline-block;
+            //    height: 56px;
+            //    line-height: 52px;
+            //    padding: 0 5px;
+            //    margin-right: 15px;
+            //    border-bottom: 3px solid @orangebase;
+            //}
+            .btn {
+                display: inline-block;
+                height: 26px;
+                width: 77px;
+                text-align: center;
+                line-height: 26px;
+                background-color: @bluebase;
+                color: #ffffff;
+                margin-left: 3px;
+                &:hover {
+                    background-color: darken(@bluebase, 10%);
+                }
+            }
+        }
+        //.newsList {
+        //    margin-top: 20px;
+        //    > li {
+        //        background-color: #ffffff;
+        //        min-height: 245px;
+        //        padding: 21px 19px;
+        //        margin-bottom: 15px;
+        //        .box-shadow(0, 0, 3px, rgb(230, 230, 230));
+        //        .content {
+        //            .image {
+        //                width: 247px;
+        //                height: 201px;
+        //                img {
+        //                    width: 247px;
+        //                    height: 201px;
+        //                    .transition();
+        //                }
+        //            }
+        //            .description {
+        //                width: 590px;
+        //                padding-left: 20px;
+        //                color: @blackdark;
+        //                h3 {
+        //                    font-size: 20px;
+        //                    a {
+        //                        color: @blackdark;
+        //                        .transition();
+        //                    }
+        //                }
+        //                .meta {
+        //                    margin-top: 6px;
+        //                    font-size: 12px;
+        //                    line-height: 24px;
+        //                    span {
+        //                        color: @orangebase;
+        //                    }
+        //                    i {
+        //                        font-style: normal;
+        //                        margin-left: 30px;
+        //                        color: #979797;
+        //                    }
+        //                }
+        //                p {
+        //                    margin-top: 15px;
+        //                    line-height: 24px;
+        //                }
+        //            }
+        //        }
+        //        &:hover {
+        //            .content {
+        //                .image {
+        //                    img {
+        //                        opacity: .8;
+        //                        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+        //                        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+        //                    }
+        //                }
+        //                .description {
+        //                    h3 {
+        //                        a {
+        //                            color: @orangebase;
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
+        //.loadMore {
+        //    .more-btn {
+        //        display: block;
+        //        height: 40px;
+        //        line-height: 40px;
+        //        background-color: #e7e7e7;
+        //        &:hover {
+        //            background-color: darken(#e7e7e7, 5%);
+        //        }
+        //    }
+        //}
+    }
+    //右侧侧栏
+    .aside-section {
+        //.aside-header {
+        //    height: 56px;
+        //    padding-top: 15px;
+        //    border-bottom: 1px solid transparent;
+        //    span {
+        //        display: inline-block;
+        //        font-size: 18px;
+        //        height: 40px;
+        //        line-height: 40px;
+        //        color: #ffffff;
+        //        background-color: @redbase;
+        //        padding: 0 26px;
+        //    }
+        //}
+        //.aside-item{
+        //    background-color: #ffffff;
+        //    margin-top: 20px;
+        //    .aside-title {
+        //        height: 53px;
+        //        border-bottom: 1px solid #e5e5e5;
+        //        padding: 0 15px;
+        //        span {
+        //            display: inline-block;
+        //            height: 52px;
+        //            line-height: 52px;
+        //            padding: 0 0 0 32px;
+        //            font-size: 18px;
+        //            color: #000000;
+        //        }
+        //    }
+        //}
+        //.recommendList {
+        //    padding: 19px 0 1px;
+        //    > li {
+        //        height: 82px;
+        //        margin-bottom: 18px;
+        //        padding: 0 18px;
+        //        .image {
+        //            width: 100px;
+        //            height: 82px;
+        //            img {
+        //                width: 100%;
+        //                height: 100%;
+        //            }
+        //        }
+        //        .description {
+        //            width: 164px;
+        //            padding-left: 10px;
+        //            a {
+        //                color: #626262;
+        //                line-height: 24px;
+        //            }
+        //        }
+        //    }
+        //}
+        //.news-flash {
+        //    .aside-title {
+        //        span {
+        //            background: url("../images/newsFlash.png") no-repeat left center;
+        //        }
+        //    }
+        //    .aside-content {
+        //        padding: 17px 15px 10px 20px;
+        //        height: 547px;
+        //        overflow: hidden;
+        //        position: relative;
+        //        .news-flash-list{
+        //            padding-right: 25px;
+        //            > li {
+        //                padding-bottom: 12px;
+        //                margin-bottom: 12px;
+        //                line-height: 24px;
+        //                border-bottom: 1px dotted #bababa;
+        //                span {
+        //                    color: @green;
+        //                }
+        //                p {
+        //                    a {
+        //                        color: #8d8d8d;
+        //                        .transition();
+        //                    }
+        //                }
+        //                &:hover {
+        //                    p {
+        //                        a {
+        //                            color: @orangebase;
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //        &:after {
+        //            content: "";
+        //            display: block;
+        //            position: absolute;
+        //            z-index: 1;
+        //            left: 0;
+        //            right: 0;
+        //            height: 1px;
+        //            bottom: 10px;
+        //            background-color: #ffffff;
+        //        }
+        //    }
+        //}
+        //.click-rank{
+        //    .aside-title{
+        //        span{
+        //            background:url("../images/clickRank.png") no-repeat left center;
+        //        }
+        //        .buttons{
+        //            padding-top: 13.5px;
+        //            .btn{
+        //                float: left;
+        //                width: 55px;
+        //                height: 25px;
+        //                text-align: center;
+        //                line-height: 25px;
+        //                font-size: 12px;
+        //                background-color: #e4e4e4;
+        //                &:hover{
+        //                    background-color: @green;
+        //                    color: #ffffff;
+        //                }
+        //            }
+        //            .btn.on{
+        //                background-color: @green;
+        //                color: #ffffff;
+        //            }
+        //        }
+        //    }
+        //    .aside-content{
+        //        font-size: 12px;
+        //        padding: 28px 15px 1px 20px;
+        //        .rankList{
+        //            border-left: 1px solid #e3e3e3;
+        //            display: none;
+        //            >li{
+        //                padding-left: 20px;
+        //                line-height: 24px;
+        //                margin-bottom: 25px;
+        //                position: relative;
+        //                &:before{
+        //                    content:"";
+        //                    position: absolute;
+        //                    width: 7px;
+        //                    height: 7px;
+        //                    .border-radius(3.5px);
+        //                    background-color: #e3e3e3;
+        //                    left: -3.5px;
+        //                    top:9px;
+        //                    .transition();
+        //                }
+        //                p{
+        //                    .text-overflow();
+        //                    a{
+        //                        .transition();
+        //                    }
+        //                }
+        //                span{
+        //                    color: @pink;
+        //                }
+        //                &:hover{
+        //                    &:before{
+        //                        background-color: @orangebase;
+        //                    }
+        //                    p{
+        //                        a{
+        //                            color: @orangebase;
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
+        //.hot-masters{
+        //    .aside-title{
+        //        span{
+        //            background: url("../images/hot_master.png") no-repeat left center;
+        //            color: @orangebase;
+        //        }
+        //    }
+        //    .aside-content{
+        //        padding: 28px 15px 1px 19px;
+        //        .mastersList{
+        //            >li{
+        //                margin-bottom: 28px;
+        //                .image{
+        //                    width: 70px;
+        //                    height: 70px;
+        //                    .border-radius(35px);
+        //                    overflow: hidden;
+        //                    img{
+        //                        width: 70px;
+        //                        height: 70px;
+        //                    }
+        //                }
+        //                .description{
+        //                    width: 196px;
+        //                    padding-left: 10px;
+        //                    height: 70px;
+        //                    overflow: hidden;
+        //                    h3{
+        //                        font-weight: normal;
+        //                        span{
+        //                            font-size: 16px;
+        //                            color: #000000;
+        //                            .transition();
+        //                        }
+        //                        small{
+        //                            font-size: 12px;
+        //                            margin-left: 10px;
+        //                            i{
+        //                                font-style: normal;
+        //                                color: #22893f;
+        //                            }
+        //                        }
+        //                    }
+        //                    p{
+        //                        margin-top: 5px;
+        //                        font-size: 12px;
+        //                        line-height: 18px;
+        //                        color: #7a7a7a;
+        //                    }
+        //                }
+        //                &:hover{
+        //                    .description{
+        //                        h3{
+        //                            span{
+        //                                color: @orangebase;
+        //                            }
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
+    }
+}

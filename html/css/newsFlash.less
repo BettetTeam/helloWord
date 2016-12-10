@@ -1,0 +1,57 @@
+@import "variables";
+@import "mix";
+
+.page-section {
+    padding-top: 20px;
+    .sec-header {
+        span {
+            font-weight: bold;
+        }
+    }
+    .news-detail {
+        background-color: #ffffff;
+        margin-top: 20px;
+        padding: 35px;
+        color: #373737;
+        >h2 {
+            font-size: 24px;
+            color: #373737;
+        }
+        .meta {
+            margin-top: 10px;
+            line-height: 24px;
+            span {
+                color: @orangebase;
+            }
+            i {
+                font-style: normal;
+                margin-left: 30px;
+                color: #979797;
+            }
+            label{
+                color: #979797;
+                margin-left: 15px;
+            }
+        }
+        .text{
+            margin-top: 25px;
+            border-bottom: 1px dotted #a0a0a0;
+            img{
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            p{
+                line-height: 30px;
+                margin: 20px 0;
+            }
+            h3{
+                font-size: 18px;
+                padding: 10px 0;
+            }
+        }
+        .pagination{
+            margin-top: 30px;
+        }
+    }
+}
